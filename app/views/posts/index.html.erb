@@ -1,1 +1,9 @@
 <h1> Photogram </h1>
+
+<% @posts.each do |f| %>
+  <%= image_tag f.image.url(:medium) %>
+  <br>
+  
+  <%= f.caption %>
+  <br>
+<% end %>
